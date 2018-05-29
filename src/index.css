@@ -1,0 +1,32 @@
+body {
+  background-color: Ivory;
+  font-family: 'Orbitron', sans-serif;
+}
+h1{
+  text-align: right;
+  padding: 10px;
+  background-color: DarkSlateGray;
+  width: 100%;
+}
+#root {
+  width:300px;
+  margin: 10px auto;
+  display: flex;
+  background-color: LightSlateGrey;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#root div{
+  border-radius: 10px;
+  width: 20%;
+  flex-grow:1;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 0;
+  margin:10px;
+  background-color: BlanchedAlmond;
+}
+#root div::after{
+  font-size: 20pt;
+  content: attr(data-button);
+}
